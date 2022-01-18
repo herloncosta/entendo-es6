@@ -1,31 +1,5 @@
 // Métodos auxiliares de array
 
-// iteração tradicional
-var frutas = ['abacaxi', 'maçã', 'uva']
-for (var i = 0; i < frutas.length; i++) {
-    console.log(frutas[i])
-}
-
-// forEach()
-var nomes = ['maria', 'josé', 'joão']
-nomes.forEach(function(nome) {
-    console.log(nome)
-})
-
-function imprimeNome(nome) {
-    console.log(nome)
-}
-
-nomes.forEach(imprimeNome)
-
-// map()
-var numeros = [1, 2, 3]
-var dobro = numeros.map(function(numero) {
-    return numero * 2
-})
-
-console.log(numeros)
-console.log(dobro)
 
 // filter()
 var alunos = [
