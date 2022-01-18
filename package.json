@@ -1,0 +1,19 @@
+{
+  "name": "entendo-es6",
+  "version": "1.0.0",
+  "description": "Link do livro: [ECMAScript 6 - Diego Martins Pinho](https://www.casadocodigo.com.br/products/livro-ecmascript6)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herloncosta/entendo-es6.git"
+  },
+  "author": "Herlon Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herloncosta/entendo-es6/issues"
+  },
+  "homepage": "https://github.com/herloncosta/entendo-es6#readme"
+}

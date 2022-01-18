@@ -1,4 +1,4 @@
-// iteração tradicional
+// iteração com for loop
 var numeros = [3, 4, 5]
 var newArr = []
 
@@ -16,3 +16,11 @@ var dobro = numeros.map(function(numero) {
 
 console.log(numeros)
 console.log(dobro)
+
+// desacomplando função
+function retornaDobro(num) {
+    return num * 2
+}
+
+var dobro2 = numeros.map(retornaDobro)
+console.log(dobro2)

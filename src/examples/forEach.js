@@ -11,6 +11,7 @@ nomes.forEach(function(nome) {
     console.log(nome)
 })
 
+// desacoplando função 
 function imprimeNome(nome) {
     console.log(nome)
 }
