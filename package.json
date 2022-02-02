@@ -4,7 +4,7 @@
   "description": "Link do livro: [ECMAScript 6 - Diego Martins Pinho](https://www.casadocodigo.com.br/products/livro-ecmascript6)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "npm start"
   },
   "repository": {
     "type": "git",
