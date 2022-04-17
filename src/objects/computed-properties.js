@@ -24,7 +24,6 @@ const usuario2 = {
 usuario2.mostrarNome();
 
 // nome da propriedade como propriedade computada
-
 let apelido = "apelido";
 
 const pessoa = {
