@@ -60,3 +60,17 @@ function doSomethingWithMyName(
 }
 
 doSomethingWithMyName("Herlon Costa");
+
+// Definindo parâmetros obrigatórios
+
+function mandatoryParameter(parameter) {
+    throw new Error(`The parameter ${parameter} must be set.`);
+}
+
+function insertOnScreen(object = mandatoryParameter("object")) {
+    // lógica da função
+}
+// Ao ser invocada, caso nenhum parâmetro seja passado um
+// um erro é retornado informado que o parâmetro é obrigatório
+
+// insertOnScreen();
