@@ -1,12 +1,12 @@
-const montaQuerySelect = (tabela, ...cols) => {
+const montaQuerySelect = (table, ...cols) => {
     let colsQuery = "";
     if (cols.length > 1) {
-        colsQuery = cols.reduce((query, col) => (query += `${col}, `), "");
+        colsQuery = cols.reduce((query, col) => (query += `${col}, `), ""); // col1, col2,
         colsQuery = colsQuery.slice(0, colsQuery.length - 2); // `col1`
     } else {
         colsQuery = "*";
     }
-    return `SELECT ${colsQuery} from ${tabela}`; // SELECT * FROM tabela
+    return `SELECT ${colsQuery} from ${table}`; // SELECT * FROM tabela
 };
 
 const query1 = montaQuerySelect("tabela");
