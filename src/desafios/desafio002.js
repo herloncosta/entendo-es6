@@ -8,13 +8,11 @@
 function removeDuplicatas(arr) {
     let unicos = [];
     arr.forEach((item) => {
-        if (unicos.length === 0) {
-            unicos.push(item);
-        } else {
-            if (unicos.indexOf(item) === -1) {
-                unicos.push(item);
-            }
-        }
+        unicos.length === 0
+            ? unicos.push(item)
+            : unicos.indexOf(item) === -1
+            ? unicos.push(item)
+            : undefined;
     });
     return unicos;
 }
