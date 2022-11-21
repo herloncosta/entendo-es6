@@ -1,15 +1,30 @@
-function Livro(titulo) {
-    this.titulo = titulo;
+const { log } = console
+
+// factory function
+function criarPessoa(nome, sobrenome) {
+    this.nome = nome
+    this.sobrenome = sobrenome
+
+    return {
+        nome,
+        sobrenome,
+        nomeCompleto: `${this.nome} ${this.sobrenome}`
+    }
 }
 
-let livro = new Livro("Entendendo ES6");
-console.log(livro.titulo); // Entendendo ES6
+const p1 = criarPessoa("Herlon", "Costa").nomeCompleto
+log(p1)
 
-// implicitamente o construtor de livro é definido como Livro
-console.log(livro instanceof Livro); // true
+// log(p1.nome)
+// log(p1.sobrenome)
+// log(p1.nomeCompleto)
 
-let outroLivro = livro; // livro e outroLivro apontam para a mesma referência em memória
-livro.titulo = "O Código Da Vinci";
+// função construtora
 
-console.log(livro.titulo); //O Código Da Vinci
-console.log(outroLivro.titulo); //O Código Da Vinci
+function Pessoa(nome, sobrenome) {
+    this.nome = nome
+    this.sobrenome = sobrenome
+    this.nomeCompleto = `${this.nome} ${this.sobrenome}`
+}
+
+const p2 = new Pessoa("Herlon", "Costa")
